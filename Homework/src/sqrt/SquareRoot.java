@@ -39,6 +39,21 @@ public class SquareRoot {
 		System.out.print(sqrt(this.input, this.guess, this.error));
 	}
 
+	/**
+	 * constructor that takes in a guess as well as number and margin of error
+	 * 
+	 * @param num
+	 * @param guess
+	 * @param err
+	 */
+	public SquareRoot(double num, double guess, double err) {
+		this.input = num;
+		this.error = err;
+		this.guess = guess;
+
+		System.out.print(sqrt(this.input, this.guess, this.error));
+	}
+
 	// Getters and Setters
 	public double getInput() {
 		return input;
@@ -86,7 +101,7 @@ public class SquareRoot {
 	}
 
 	public static void main(String[] args) {
-		SquareRoot test = new SquareRoot(80);
+		SquareRoot test = new SquareRoot(81);
 
 		System.out.print(test);
 	}
